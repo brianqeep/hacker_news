@@ -1,0 +1,9 @@
+<%= @news.information%>
+
+<p><%=link_to "return to news", news_index_path%></p>
+
+
+  <p><%= link_to "Edit", edit_news_path(@news) %></p>
+  <p><%= link_to "Delete", news_path(@news),
+                           :data => {:confirm => "You sure?",
+                                     :method => "delete"} %></p>
